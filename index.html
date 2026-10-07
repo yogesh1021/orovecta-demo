@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>VR INDUSTRIE'S</title>
+  <title>Orovecta | Industrial Lubrication. Engineered for Performance.</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -26,7 +26,541 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+<style>
+      /* ===== Orovecta Core Solution Product Blocks ===== */
+      #solutions.product-solutions {
+        padding: 80px 0;
+        background: #f8f8f8;
+      }
 
+      #solutions .product-solutions-row {
+        margin-top: 35px;
+      }
+
+      #solutions .product-block {
+        position: relative;
+        height: 100%;
+        min-height: 340px;
+        padding: 42px 34px 36px;
+        background: #ffffff;
+        border: 1px solid #e7e7e7;
+        border-top: 4px solid #00d9d9;
+        box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+        transition: all 0.3s ease;
+        overflow: hidden;
+      }
+
+      #solutions .product-block::after {
+        content: "";
+        position: absolute;
+        right: -55px;
+        bottom: -65px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: rgba(0, 217, 217, 0.06);
+        transition: all 0.3s ease;
+      }
+
+      #solutions .product-block:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 16px 38px rgba(0, 0, 0, 0.11);
+        border-top-color: #00c7c7;
+      }
+
+      #solutions .product-block:hover::after {
+        transform: scale(1.25);
+      }
+
+      #solutions .product-icon {
+        width: 62px;
+        height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 22px;
+        border-radius: 50%;
+        background: #f1fafa;
+        color: #00bfc4;
+        font-size: 30px;
+      }
+
+      #solutions .product-number {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: #b7b7b7;
+        letter-spacing: 1px;
+      }
+
+      #solutions .product-block h4 {
+        margin: 0 0 18px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 25px;
+        font-weight: 500;
+        color: #30485a;
+      }
+
+      #solutions .product-block p {
+        margin: 0 0 28px;
+        min-height: 88px;
+        font-size: 15px;
+        line-height: 1.75;
+        color: #667887;
+      }
+
+      #solutions .product-block a {
+        position: relative;
+        z-index: 2;
+        color: #00aeb4;
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      #solutions .product-block a i {
+        margin-left: 7px;
+        transition: margin-left 0.3s ease;
+      }
+
+      #solutions .product-block a:hover {
+        color: #008d92;
+      }
+
+      #solutions .product-block a:hover i {
+        margin-left: 12px;
+      }
+
+      @media (max-width: 991px) {
+        #solutions .product-block {
+          margin-bottom: 30px;
+          min-height: 320px;
+        }
+      }
+
+      @media (max-width: 575px) {
+        #solutions.product-solutions {
+          padding: 60px 0;
+        }
+
+        #solutions .product-block {
+          padding: 35px 28px 30px;
+          min-height: auto;
+        }
+      }
+
+      /* ===== Customized Solutions - Section Only ===== */
+#customized {
+  background: #fff !important;
+  padding: 80px 0;
+}
+
+#customized .section-header {
+  margin-bottom: 55px;
+}
+
+#customized .custom-intro h4 {
+  color: #1b1b1b;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#customized .custom-intro p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.85;
+  margin-bottom: 18px;
+}
+
+#customized .custom-intro .custom-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 11px 22px;
+  border: 1px solid #00d9d9;
+  color: #111;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+#customized .custom-intro .custom-btn:hover {
+  background: #00d9d9;
+  color: #fff;
+}
+
+#customized .custom-approach {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+
+#customized .custom-step {
+  position: relative;
+  display: flex;
+  gap: 18px;
+  min-height: 125px;
+  padding: 0 25px 28px 0;
+}
+
+#customized .custom-step:nth-child(even) {
+  padding-left: 25px;
+  padding-right: 0;
+}
+
+#customized .custom-step .step-no {
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #00d9d9;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#customized .custom-step h4 {
+  margin: 0 0 8px;
+  color: #222;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+#customized .custom-step p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+#customized .customization-title {
+  margin: 35px 0 25px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  color: #222;
+}
+
+#customized .customization-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-top: 1px solid #e8e8e8;
+}
+
+#customized .customization-item {
+  padding: 28px 20px 10px;
+  text-align: center;
+  border-right: 1px solid #e8e8e8;
+}
+
+#customized .customization-item:last-child {
+  border-right: 0;
+}
+
+#customized .customization-item i {
+  display: block;
+  color: #00cfd2;
+  font-size: 25px;
+  margin-bottom: 14px;
+}
+
+#customized .customization-item h5 {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+@media (max-width: 991px) {
+  #customized {
+    padding: 65px 0;
+  }
+
+  #customized .custom-approach {
+    margin-top: 35px;
+  }
+
+  #customized .customization-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #customized .customization-item:nth-child(3) {
+    border-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #customized .section-header {
+    margin-bottom: 35px;
+  }
+
+  #customized .custom-approach {
+    grid-template-columns: 1fr;
+    margin-top: 35px;
+  }
+
+  #customized .custom-step,
+  #customized .custom-step:nth-child(even) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #customized .customization-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #customized .customization-item {
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  #customized .customization-item:nth-child(3) {
+    border-right: 1px solid #e8e8e8;
+  }
+
+  #customized .customization-item:nth-child(even) {
+    border-right: 0;
+  }
+}
+
+/* ===== Industries Section - Orovecta ===== */
+#industries {
+  background: #fff !important;
+  padding: 80px 0;
+}
+#industries .section-header { margin-bottom: 50px; }
+#industries .section-header p:first-of-type {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+}
+#industries .industry-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+}
+#industries .industry-item {
+  min-height: 235px;
+  padding: 32px 30px;
+  border-right: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  background: #fff;
+  transition: all .3s ease;
+}
+#industries .industry-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,.06);
+}
+#industries .industry-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 22px;
+  border: 1px solid #00d9d9;
+  color: #222;
+  font-size: 12px;
+  font-weight: 600;
+}
+#industries .industry-item h4 {
+  margin: 0 0 13px;
+  color: #222;
+  font-size: 19px;
+  font-weight: 600;
+}
+#industries .industry-item p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.75;
+}
+@media (max-width: 991px) {
+  #industries { padding: 65px 0; }
+  #industries .industry-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 575px) {
+  #industries .industry-grid { grid-template-columns: 1fr; }
+  #industries .industry-item { min-height: auto; }
+}
+/* =========================================================
+   WHY OROVECTA - CLEAN & PREMIUM
+   ========================================================= */
+
+#why-orovecta {
+  background: #ffffff !important;
+  padding: 85px 0;
+}
+
+/* Section Heading */
+#why-orovecta .section-header {
+  margin-bottom: 55px;
+}
+
+#why-orovecta .section-header h3 {
+  margin-bottom: 15px;
+}
+
+#why-orovecta .section-header p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Main Grid */
+#why-orovecta .why-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+/* Individual Card */
+#why-orovecta .why-item {
+  position: relative;
+  min-height: 245px;
+  padding: 32px 28px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 2px;
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Small aqua line at top */
+#why-orovecta .why-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 3px;
+  background: #00d9d9;
+}
+
+/* Hover */
+#why-orovecta .why-item:hover {
+  transform: translateY(-6px);
+  border-color: #e2e2e2;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Number */
+#why-orovecta .why-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  margin-bottom: 28px;
+
+  background: #f8ffff;
+  border: 1px solid #00d9d9;
+
+  color: #222;
+  font-size: 12px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+#why-orovecta .why-item:hover .why-number {
+  background: #00d9d9;
+  color: #ffffff;
+}
+
+/* Title */
+#why-orovecta .why-item h4 {
+  margin: 0 0 15px;
+
+  color: #151515;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+
+/* Description */
+#why-orovecta .why-item p {
+  margin: 0;
+
+  color: #707070;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1199px) {
+
+  #why-orovecta .why-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  #why-orovecta {
+    padding: 65px 0;
+  }
+
+  #why-orovecta .section-header {
+    margin-bottom: 40px;
+  }
+
+  #why-orovecta .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  #why-orovecta .why-item {
+    min-height: 220px;
+    padding: 25px 22px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+  #why-orovecta .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #why-orovecta .why-item {
+    min-height: auto;
+    padding: 28px 24px;
+  }
+
+}
+    </style>
 
 </head>
 
@@ -40,13 +574,13 @@
         <div class="col-xl-11 d-flex align-items-center justify-content-between">
           <h1 class="logo"><a href="index.html"><img
             src="assets/img/logo.png"
-            class="img-fluid rounded-circle"
+            class="img-fluid rounded"
             alt="logo"
           />
           </a></h1>
           
 
-          <nav id="navbar" class="navbar">
+          <!-- <nav id="navbar" class="navbar">
             <ul>
               <li><a class="nav-link scrollto active" href="index.html">HOME</a></li>
               <li><a class="nav-link scrollto" href="about.html">ABOUT US</a></li>
@@ -73,7 +607,27 @@
               </li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav><!-- .navbar -->
+          </nav>-->
+          
+          <!-- .navbar  -->
+             <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto active" href="#hero">HOME</a></li>
+              <li><a class="nav-link scrollto" href="about.html">ABOUT</a></li>
+              <li class="dropdown"><a href="#solutions"><span>SOLUTIONS</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="#metalworking">Metalworking Fluids</a></li>
+                  <li><a href="#specialty">Specialty Lubricants</a></li>
+                  <li><a href="#mro">MRO Lubricants</a></li>
+                  <li><a href="#customized">Customized Solutions</a></li>
+                </ul>
+              </li>
+              <li><a class="nav-link scrollto" href="#industries">INDUSTRIES</a></li>
+              <li><a class="nav-link scrollto" href="#why-orovecta">WHY OROVECTA?</a></li>
+              <li><a class="nav-link scrollto" href="#">CONTACT</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
         </div>
       </div>
 
@@ -82,7 +636,7 @@
 
   <!-- ======= hero Section ======= -->
   <section id="hero">
-    <div class="hero-container">
+    <!-- <div class="hero-container">
       <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
         <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
@@ -133,6 +687,51 @@
         </a>
 
       </div>
+    </div> -->
+ 
+       <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+        <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/3.png)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">ENGINEERED LUBRICATION SOLUTIONS <span style="color:aqua;">FOR INDUSTRY</span></h2>
+                <p class="animate__animated animate__fadeInUp">German Technology • Metalworking • Specialty Lubrication • MRO</p>
+                <a href="#solutions" class="btn-get-started scrollto animate__animated animate__fadeInUp">Explore Solutions</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/2.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown"><span style="color:aqua;">METALWORKING</span> SOLUTIONS</h2>
+                <p class="animate__animated animate__fadeInUp">Cleaners, rust preventive oils, forming oils and semi-synthetic cutting fluids designed around your manufacturing process.</p>
+                <a href="#metalworking" class="btn-get-started scrollto animate__animated animate__fadeInUp">View Metalworking</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/1.jpg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">SPECIALTY <span style="color:aqua;">LUBRICANTS</span></h2>
+                <p class="animate__animated animate__fadeInUp">Performance for demanding applications involving extreme temperature, heavy loads, high speeds and challenging environments.</p>
+                <a href="#specialty" class="btn-get-started scrollto animate__animated animate__fadeInUp">Explore Specialty Lubricants</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+      </div>
     </div>
   </section><!-- End Hero Section -->
 
@@ -143,25 +742,24 @@
 
     <!-- ======= Services Section ======= -->
     <section id="services">
-      <div class="container" data-aos="fade-up">
+      <!-- <div class="container" data-aos="fade-up">
 
         <header class="section-header wow fadeInUp">
-          <h3>Services</h3>
-          <p style="font-size: larger;">VR Industries has developed several cost-effective electroplating processes to ensure that every customer receives the quality finish they expect from an industry leader.
-          </p>
+          <h3>APPLICATION-FOCUSED LUBRICATION</h3>
+       <p style="font-size:larger;">We focus on solving the lubrication challenge, not simply supplying a product.</p>
         </header>
 
         <div class="row">
 
           <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class="bi bi-diagram-3-fill"></i></div>
-            <h4 class="title"><a href="">Reel to Reel Plating </a></h4>
-            <p class="description">Reel plating is the surface coating of flat strips, stamped or preformed electrical contacts attached to a carrier strip in continuous lengths. </p>
+            <h4 class="title"><a href="">CLEAN </a></h4>
+            <p class="description">Remove oil, grease, dirt, metal fines and process residues to prepare surfaces for the next process.</p>
           </div>
           <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="200">
             <div class="icon"><i class="bi bi-hdd-rack"></i></div>
-            <h4 class="title"><a href="">Rack Plating  </a></h4>
-            <p class="description">In Rack plating job parts are ‘hung’ on a metal rack (fixture) and get transported through the different stages of pre-treatment, electroplating and post-treatment. </p>
+            <h4 class="title"><a href="">PROTECT  </a></h4>
+            <p class="description">Protect components against atmospheric corrosion and flash rust during storage, transport and production. </p>
           </div>
           <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="300">
             <div class="icon"><i class="bi bi-card-checklist"></i></div>
@@ -183,6 +781,41 @@
 
         </div>
 
+      </div> -->
+    
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <h3>APPLICATION-FOCUSED LUBRICATION</h3>
+          <p style="font-size:larger;">We focus on solving the lubrication challenge, not simply supplying a product.</p>
+        </header>
+
+        <div class="row">
+          <div class="col-lg col-md-6 box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-droplet-half"></i></div>
+            <h4 class="title">CLEAN</h4>
+            <p class="description">Remove oil, grease, dirt, metal fines and process residues to prepare surfaces for the next process.</p>
+          </div>
+          <div class="col-lg col-md-6 box" data-aos="fade-up" data-aos-delay="150">
+            <div class="icon"><i class="bi bi-shield-check"></i></div>
+            <h4 class="title">PROTECT</h4>
+            <p class="description">Protect components against atmospheric corrosion and flash rust during storage, transport and production.</p>
+          </div>
+          <div class="col-lg col-md-6 box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-tools"></i></div>
+            <h4 class="title">FORM</h4>
+            <p class="description">Support demanding stamping, pressing, drawing, deep drawing, bending and sheet-metal forming operations.</p>
+          </div>
+          <div class="col-lg col-md-6 box" data-aos="fade-up" data-aos-delay="250">
+            <div class="icon"><i class="bi bi-gear-wide-connected"></i></div>
+            <h4 class="title">MACHINE</h4>
+            <p class="description">Deliver cooling, lubrication, tool-life support and process stability across modern machining operations.</p>
+          </div>
+          <div class="col-lg col-md-6 box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-speedometer2"></i></div>
+            <h4 class="title">LUBRICATE</h4>
+            <p class="description">Reliable lubrication for bearings, gearboxes, chains, pumps, motors, machine tools and industrial equipment.</p>
+          </div>
+        </div>
       </div>
     </section><!-- End Services Section -->
 
@@ -195,8 +828,234 @@
       </div>
     </section> -->
 
+      <!-- ======= Core Solutions / Product Blocks Section ======= -->
+    <section id="solutions" class="product-solutions">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>OUR CORE SOLUTIONS</h3>
+          <p style="font-size:larger;">Three focused lubrication portfolios for modern manufacturing and industrial applications.</p>
+        </header>
+
+        <div class="row product-solutions-row">
+
+          <div class="col-lg-4 col-md-6" id="metalworking" data-aos="fade-up" data-aos-delay="100">
+            <div class="product-block">
+              <div class="product-icon">
+                <i class="bi bi-gear-wide-connected"></i>
+              </div>
+              <span class="product-number">01</span>
+              <h4>Metalworking Fluids</h4>
+              <p>
+                Cleaners, rust preventive oils, forming oils and semi-synthetic
+                cutting fluids for different stages of metal processing.
+              </p>
+              <a href="#">Explore Metalworking Products <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" id="specialty" data-aos="fade-up" data-aos-delay="200">
+            <div class="product-block">
+              <div class="product-icon">
+                <i class="bi bi-fire"></i>
+              </div>
+              <span class="product-number">02</span>
+              <h4>Specialty Lubricants</h4>
+              <p>
+                High-temperature lubricants, heavy-duty and EP lubricants,
+                specialty greases, oils, chain lubricants and maintenance solutions.
+              </p>
+              <a href="#">Explore Specialty Lubricants <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" id="mro" data-aos="fade-up" data-aos-delay="300">
+            <div class="product-block">
+              <div class="product-icon">
+                <i class="bi bi-wrench-adjustable-circle"></i>
+              </div>
+              <span class="product-number">03</span>
+              <h4>MRO Lubricants</h4>
+              <p>
+                Industrial greases, gear oils, hydraulic oils, compressor oils,
+                chain oils, circulating oils and maintenance lubricants.
+              </p>
+              <a href="#">Explore MRO Products <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End Core Solutions / Product Blocks Section -->
+
+
+       <!-- ======= Customized Solutions Section ======= -->
+    <section id="customized">
+      <div class="container">
+
+        <header class="section-header" data-aos="fade-up">
+          <h3>CUSTOMIZED SOLUTIONS</h3>
+          <p>Because every application is different.</p>
+        </header>
+
+        <div class="row align-items-center">
+
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="custom-intro">
+              <h4>Application-Specific Lubrication</h4>
+
+              <p>
+                A standard product may not always deliver the desired performance.
+                Differences in material, process, machine design, operating conditions
+                and production requirements can create unique lubrication challenges.
+              </p>
+
+              <p>
+                Orovecta works with customers to develop application-specific solutions
+                across metalworking and industrial lubrication.
+              </p>
+
+              <a href="#contact" class="custom-btn">
+                Discuss Your Application <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="custom-approach">
+
+              <div class="custom-step">
+                <div class="step-no">01</div>
+                <div>
+                  <h4>UNDERSTAND</h4>
+                  <p>Material, machine, process and operating conditions.</p>
+                </div>
+              </div>
+
+              <div class="custom-step">
+                <div class="step-no">02</div>
+                <div>
+                  <h4>IDENTIFY</h4>
+                  <p>The key performance challenge.</p>
+                </div>
+              </div>
+
+              <div class="custom-step">
+                <div class="step-no">03</div>
+                <div>
+                  <h4>RECOMMEND</h4>
+                  <p>An appropriate existing Orovecta solution or formulation.</p>
+                </div>
+              </div>
+
+              <div class="custom-step">
+                <div class="step-no">04</div>
+                <div>
+                  <h4>TRIAL</h4>
+                  <p>Evaluation under actual operating conditions.</p>
+                </div>
+              </div>
+
+              <div class="custom-step">
+                <div class="step-no">05</div>
+                <div>
+                  <h4>OPTIMIZE</h4>
+                  <p>Fine-tuning for performance and process requirements.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-up">
+          <div class="customization-title">CUSTOMIZATION CAN INCLUDE</div>
+
+          <div class="customization-grid">
+            <div class="customization-item">
+              <i class="bi bi-diagram-3"></i>
+              <h5>Application-Specific Formulations</h5>
+            </div>
+
+            <div class="customization-item">
+              <i class="bi bi-graph-up-arrow"></i>
+              <h5>Performance Optimization</h5>
+            </div>
+
+            <div class="customization-item">
+              <i class="bi bi-pencil-square"></i>
+              <h5>Product Modification</h5>
+            </div>
+
+            <div class="customization-item">
+              <i class="bi bi-arrow-repeat"></i>
+              <h5>Alternative Lubricant Solutions</h5>
+            </div>
+
+            <div class="customization-item">
+              <i class="bi bi-gear"></i>
+              <h5>Process-Specific Lubrication</h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Customized Solutions Section -->
+
+    <!-- ======= Industries Section ======= -->
+    <section id="industries">
+      <div class="container">
+
+        <header class="section-header" data-aos="fade-up">
+          <h3>INDUSTRIES</h3>
+          <p>SOLUTIONS ACROSS INDUSTRY</p>
+          <p>Orovecta serves a broad range of manufacturing and industrial sectors.</p>
+        </header>
+
+        <div class="industry-grid">
+
+          <div class="industry-item" data-aos="fade-up" data-aos-delay="100">
+            <span class="industry-number">01</span>
+            <h4>AUTOMOTIVE &amp; AUTO COMPONENTS</h4>
+            <p>Machining, forming, cleaning, corrosion protection and equipment lubrication.</p>
+          </div>
+
+          <div class="industry-item" data-aos="fade-up" data-aos-delay="150">
+            <span class="industry-number">02</span>
+            <h4>GENERAL ENGINEERING</h4>
+            <p>CNC machining, machine tools, bearings, gearboxes and plant maintenance.</p>
+          </div>
+
+          <div class="industry-item" data-aos="fade-up" data-aos-delay="200">
+            <span class="industry-number">03</span>
+            <h4>METAL FABRICATION</h4>
+            <p>Forming, stamping, cutting, cleaning and corrosion protection.</p>
+          </div>
+
+          <div class="industry-item" data-aos="fade-up" data-aos-delay="100">
+            <span class="industry-number">04</span>
+            <h4>STEEL &amp; METAL PROCESSING</h4>
+            <p>Specialty lubrication and metalworking solutions for demanding environments.</p>
+          </div>
+
+          <div class="industry-item" data-aos="fade-up" data-aos-delay="150">
+            <span class="industry-number">05</span>
+            <h4>INDUSTRIAL MACHINERY</h4>
+            <p>Specialty lubricants and MRO solutions for critical equipment.</p>
+          </div>
+
+          <div class="industry-item" data-aos="fade-up" data-aos-delay="200">
+            <span class="industry-number">06</span>
+            <h4>MACHINE SHOPS &amp; CNC</h4>
+            <p>Cutting fluids, cleaners, forming solutions and application-specific products.</p>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Industries Section -->
     <!-- ======= Skills Section ======= -->
-    <section id="skills">
+    <!-- <section id="skills">
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
@@ -214,7 +1073,9 @@
         </header>
 
        
-    </section><!-- End Skills Section -->
+    </section> -->
+    
+    <!-- End Skills Section -->
 
  
     <!-- ======= Our Clients Section ======= -->
@@ -227,16 +1088,16 @@
 
         <div class="clients-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/Picture1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Picture2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Picture3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Picture4.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Picture5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Picture6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Picture7.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Picture8.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Picture9.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Picture10.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="#" class="img-fluid" alt="IMG"></div>
+            <div class="swiper-slide"><img src="#" class="img-fluid" alt="IMG"></div>
+            <div class="swiper-slide"><img src="#" class="img-fluid" alt="IMG"></div>
+            <div class="swiper-slide"><img src="#" class="img-fluid" alt="IMG"></div>
+            <div class="swiper-slide"><img src="#" class="img-fluid" alt="IMG"></div>
+            <div class="swiper-slide"><img src="#" class="img-fluid" alt="IMG"></div>
+            <div class="swiper-slide"><img src="#" class="img-fluid" alt="IMG"></div>
+            <div class="swiper-slide"><img src="#" class="img-fluid" alt="IMG"></div>
+            <div class="swiper-slide"><img src="#" class="img-fluid" alt="IMG"></div>
+            <div class="swiper-slide"><img src="#g" class="img-fluid" alt="IMG"></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -247,7 +1108,7 @@
    
 
     <!-- ======= Team Section ======= -->
-    <section id="team">
+    <!-- <section id="team">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h3>Board Of Directors</h3>
@@ -258,21 +1119,9 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <!-- <img src="assets/img/team-2.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>abc</h4>
-                  <span>Chief Executive Officer</span>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div> -->
+             
             </div>
-            <!-- <center><strong>Vikram Singh</strong></center> -->
+           
           </div>
 
           <div class="col-lg-3 col-md-6">
@@ -315,34 +1164,65 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <!-- <img src="assets/img/team-4.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>abc</h4>
-                  <span>Accountant</span>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div> -->
+            
             
           </div>
         </div>
 
       </div>
-    </section><!-- End Team Section -->
+    </section> -->
+    <!-- End Team Section -->
 
+   <!-- ======= Why Orovecta Section ======= -->
+    <section id="why-orovecta">
+      <div class="container">
 
+        <header class="section-header" data-aos="fade-up">
+          <h3>WHY OROVECTA?</h3>
+          <p>Technical expertise, application focus and solutions built for industry.</p>
+        </header>
+
+        <div class="why-grid">
+
+  <div class="why-item" data-aos="fade-up" data-aos-delay="100">
+    <span class="why-number">01</span>
+    <h4>9+ YEARS OF EXPERIENCE</h4>
+    <p>Established industrial market experience.</p>
+  </div>
+
+  <div class="why-item" data-aos="fade-up" data-aos-delay="150">
+    <span class="why-number">02</span>
+    <h4>GERMAN TECHNOLOGY</h4>
+    <p>Technology collaboration and technical expertise.</p>
+  </div>
+
+  <div class="why-item" data-aos="fade-up" data-aos-delay="200">
+    <span class="why-number">03</span>
+    <h4>THREE CORE SOLUTIONS</h4>
+    <p>Metalworking Fluids | Specialty Lubricants | MRO Lubricants</p>
+  </div>
+
+  <div class="why-item" data-aos="fade-up" data-aos-delay="250">
+    <span class="why-number">04</span>
+    <h4>CUSTOMIZED SOLUTIONS</h4>
+    <p>Solutions developed around specific application requirements.</p>
+  </div>
+
+  <div class="why-item" data-aos="fade-up" data-aos-delay="300">
+    <span class="why-number">05</span>
+    <h4>APPLICATION-FOCUSED</h4>
+    <p>We focus on solving the lubrication challenge, not simply supplying a product.</p>
+  </div>
+
+</div>
+      </div>
+    </section><!-- End Why Orovecta Section -->
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="footer-top">
+    <!-- <div class="footer-top">
       <div class="container">
         <div class="row">
 
@@ -355,23 +1235,16 @@
               width="100px" />
            
             </h3>
-            <h2 >History of Vikram Industries</h2>
-            
-              <blockquote>The company pride it self in its technical knowledge of Copper / Tin / Nickel /Sulfamate Nickel/ Silver/Rhodium/Palladium and Gold Plating.
-                <span style="color: aqua;">VR Industries</span> in the sister company of Vikram Industries ,
-                <span style="color: aqua;">VR Industries</span>  has established in 2020 at varale (Chakan -Pune)
-                <span style="color: aqua;">VR Industries</span> has Started strip Copper/Brass/SS/MS reel to reel selective plating & barrel plating.
-                
-                </blockquote>
+      
           </div>
 
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="about.html">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="about.html">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
@@ -426,11 +1299,11 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>VR INDUSTRIE'S</strong>. All Rights Reserved
+        &copy; Copyright <strong>Orovecta | Industrial Lubrication. Engineered for Performance.</strong>. All Rights Reserved
       </div>
       <div class="credits">
        

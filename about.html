@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>VR INDUSTRIE'S</title>
+  <title>Orovecta | About Us.</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -28,7 +28,148 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/about.css" rel="stylesheet">
 
+<style>
+  /* =========================================================
+   OUR EXPERTISE
+   ========================================================= */
 
+#expertise {
+  background: #fff;
+  padding: 70px 0 75px;
+}
+
+/* Section Heading */
+
+#expertise .section-header {
+  margin-bottom: 45px;
+}
+
+#expertise .section-header h3 {
+  margin-bottom: 15px;
+}
+
+#expertise .section-header p {
+  font-size: 16px;
+  color: #222;
+}
+
+
+/* Expertise Columns */
+
+#expertise .expertise-box {
+  padding: 0 25px;
+  position: relative;
+}
+
+
+/* Red Icons */
+
+#expertise .expertise-box .icon {
+  margin-bottom: 15px;
+}
+
+#expertise .expertise-box .icon i {
+  color: #ed1111;
+  font-size: 36px;
+}
+
+
+/* Titles */
+
+#expertise .expertise-box .title {
+  margin: 0 0 14px;
+
+  color: #555;
+  font-size: 17px;
+  font-weight: 600;
+
+  line-height: 1.4;
+}
+
+
+/* Description */
+
+#expertise .expertise-box .description {
+  margin: 0;
+
+  color: #666;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* Buttons */
+
+#expertise .expertise-buttons {
+  margin-top: 45px;
+  text-align: center;
+}
+
+#expertise .expertise-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin: 0 10px;
+
+  color: #00aeea;
+  font-size: 15px;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+#expertise .expertise-btn:hover {
+  color: #ed1111;
+}
+
+#expertise .expertise-btn i {
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+  #expertise .expertise-box {
+    margin-bottom: 35px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  #expertise {
+    padding: 60px 0;
+  }
+
+  #expertise .expertise-box {
+    padding: 0 20px;
+    margin-bottom: 35px;
+  }
+
+  #expertise .expertise-buttons {
+    margin-top: 15px;
+  }
+
+  #expertise .expertise-btn {
+    display: flex;
+    justify-content: center;
+    margin: 12px 0;
+  }
+
+}
+</style>
 </head>
 
 <body>
@@ -41,7 +182,7 @@
         <div class="col-xl-11 d-flex align-items-center justify-content-between">
           <h1 class="logo"><a href="index.html"><img
             src="assets/img/logo.png"
-            class="img-fluid rounded-circle"
+            class="img-fluid rounded"
             alt="logo"
           />
           </a></h1>
@@ -49,39 +190,29 @@
 
           <nav id="navbar" class="navbar">
             <ul>
-              <li><a class="nav-link scrollto active" href="index.html">HOME</a></li>
-              <li><a class="nav-link scrollto" href="about.html">ABOUT US</a></li>
-              <li><a class="nav-link scrollto" href="careers.html">CAREERS</a></li>
-              <li><a class="nav-link scrollto " href="Contact.html">CONTACT</a></li>
-             
-              <li class="dropdown"><a href=""><span>PRODUCTS</span> <i class="bi bi-chevron-down"></i></a>
+              <li><a class="nav-link scrollto " href="index.html">HOME</a></li>
+              <li><a class="nav-link scrollto active" href="about.html">ABOUT</a></li>
+              <li class="dropdown"><a href="#solutions"><span>SOLUTIONS</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
-                  <li><a href="reel_to_reel.html">Reel to Reel Plating </a></li>
-                  <li><a href="barrel.html">Barrel Plating </a></li>
-                  <li><a href="rack.html">Rack Plating  </a></li>
-                  <li><a href="selective.html">Selective Plating </a></li>
-                  <li><a href="reel_to_reel_selct.html">Reel to Reel Selective Plating </a></li>
-                  
-                </li>
+                  <li><a href="#metalworking">Metalworking Fluids</a></li>
+                  <li><a href="#specialty">Specialty Lubricants</a></li>
+                  <li><a href="#mro">MRO Lubricants</a></li>
+                  <li><a href="#customized">Customized Solutions</a></li>
                 </ul>
               </li>
-              <li class="dropdown"><a href=""><span>MORE</span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li><a href="eq.html">Equipment’s </a></li>
-                  <li><a href="eq.html">Plated Parts </a></li>
-      
-                </ul>
-              </li>
+              <li><a class="nav-link scrollto" href="#industries">INDUSTRIES</a></li>
+              <li><a class="nav-link scrollto" href="#why-orovecta">WHY OROVECTA?</a></li>
+              <li><a class="nav-link scrollto" href="#">CONTACT</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav><!-- .navbar -->
+          </nav>
         </div>
       </div>
 
     </div>
   </header><!-- End Header -->
   <img
-          src="assets/img/about1.jpg"
+          src="assets/img/about1.png"
           class="img-fluid"
           alt=""
           style="height: 500px;width: 100%;"
@@ -102,18 +233,25 @@
         <header class="section-header">
          
           <h3>About Us</h3>
-          <blockquote>As an industry leader in electroplating in India VR Industries has developed a comprehensive range of plating that suits your product needs and provide a level of quality that ensures a valuable return on your investment. Plating-machine
-            In addition to our surface finishing solutions used by some of India’s most important industries, we also offer comprehensive customer service and assistance to ensure every customer is provided with the right solution for their application. 
-            Copper is a reddish pink coating that may be deposited as an undercoat or final plate. </blockquote><blockquote> Copper is a good barrier finish used to secure adhesion between a substrate and the next layer of plating by preventing attack on the substrate and providing a consistency pure interface. Copper plating has exceptional ‘levelling’ power that helps to smooth out or hide surface imperfections and to reduce polishing costs. Electroless Nickel is a hard Nickel phosphorus alloy of uniform thickness.
-               </blockquote><blockquote>That means the EN coating thickness on the internal corner of the box shaped object can be the same as the coating thickness found on the external surfaces or sharp points. This coating has very high corrosion resistance and low porosity. The hardness of EN can be increased by heat treatment. EN is deposited without the use of electrical current but by a mechanism called autocatalysis in which Nickel is the catalyst. The abrasion resistance of EN is superior to that of electrolytic Nickel. EN is smooth and reduces galling tendency.
+          <p>Industrial Lubrication. Engineered for Performance.</p>
+           <p class="about-intro">
+          <strong>German Technology | Metalworking Fluids | Specialty Lubricants | MRO Solutions</strong>
+        </p>
+          <blockquote>Orovecta is an industrial lubrication brand with over 8 years of experience, providing technology-driven lubrication solutions for modern manufacturing and industrial applications. </blockquote><blockquote> Copper is a good barrier finish used to secure adhesion between a substrate and the next layer of plating by preventing attack on the substrate and providing a consistency pure interface. Copper plating has exceptional ‘levelling’ power that helps to smooth out or hide surface imperfections and to reduce polishing costs. Electroless Nickel is a hard Nickel phosphorus alloy of uniform thickness.
+               </blockquote>
+               <blockquote>
+                Our portfolio brings together Metalworking Fluids, Specialty Lubricants and MRO Lubrication Solutions, supported by application expertise and the capability to develop customized solutions for specific customer requirements.
+From metal preparation and machining to critical equipment lubrication, Orovecta focuses on delivering the right solution for the right application.
+
           </blockquote>
         </header>
+        
         <br>
 
         <div class="row about-cols">
 
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="about-col">
+            <!-- <div class="about-col">
               <div class="img">
                 <img src="assets/img/about-mission.jpg" alt="" class="img-fluid">
                 <div class="icon"><i class="bi bi-bar-chart"></i></div>
@@ -126,11 +264,11 @@
              <p><strong>For our Employees:</strong> To provide them with an Safe environment in which every individual learns, grows and prospers.</p>
              <p><strong>For our Business Partners: </strong>To enable them to consider VR Industries process and services as their first choice.</p>
               
-            </div>
+            </div> -->
           </div>
 
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-col">
+            <!-- <div class="about-col">
               <div class="img">
                 <img src="assets/img/about-plan.jpg" alt="" class="img-fluid">
                 <div class="icon"><i class="bi bi-brightness-high"></i></div>
@@ -143,106 +281,141 @@
                 Collaborate with industry experts, institutions, and innovators to identify emerging technologies.</p>
                 <p><strong>Continuous Equipment Upgrades:</strong> Regularly update and upgrade our electroplating equipment to ensure efficiency, precision, and compliance with the latest industry standards.
                   Explore automation solutions to enhance process reliability and reduce turnaround times.</p>
-            </div>
+            </div> -->
           </div>
 
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="about-col">
+            <!-- <div class="about-col">
               <div class="img">
                 <img src="assets/img/about-vision.jpg" alt="" class="img-fluid">
                 <div class="icon"><i class="bi bi-calendar4-week"></i></div>
               </div>
               <h2 class="title"><a href="#">Our Vision</a></h2>
               <p>
-                At <span style="color: rgb(237, 34, 34);">VR INDUSTRIE'S</span>, we envision a future where excellence in reel-to-reel electroplating is synonymous with innovation, sustainability, and client satisfaction. 
+                At <span style="color: rgb(237, 34, 34);">Orovecta | Industrial Lubrication. Engineered for Performance.</span>, we envision a future where excellence in reel-to-reel electroplating is synonymous with innovation, sustainability, and client satisfaction. 
                 As industry leaders, our vision is to consistently set new standards, environmental stewardship, and a relentless commitment to quality.
               </p>
               <p> <strong>Innovation and Technological Advancement:</strong> We strive to be at the forefront of technological innovation in the electroplating industry. Our vision includes the continuous exploration and integration of state-of-the-art processes, and equipment, ensuring that we provide our clients with the most advanced and efficient reel-to-reel electroplating solutions available.</p>
              
-            </div>
+            </div> -->
           </div>
 
         </div>
 
       </div>
     </section><!-- End About Us Section -->
+<!-- ======= Our Expertise Section ======= -->
+<section id="expertise">
+  <div class="container" data-aos="fade-up">
 
-   <!-- ======= Services Section ======= -->
-   <section id="services">
-    <div class="container" data-aos="fade-up">
+    <header class="section-header">
+      <h3>OUR EXPERTISE</h3>
+      <p>Technology-driven lubrication solutions for modern manufacturing and industrial applications.</p>
+    </header>
 
-      <header class="section-header wow fadeInUp">
-        <h3>Services</h3>
-        <p style="font-size: larger;"> <strong><span style="color: aqua;">VR INDUSTRIES </span></strong>has developed several cost-effective electroplating processes to ensure that every customer receives the quality finish they expect from an industry leader.
+    <div class="row">
+
+      <!-- Metalworking Fluids -->
+      <div class="col-lg-3 col-md-6 expertise-box"
+           data-aos="fade-up"
+           data-aos-delay="100">
+
+        <div class="icon">
+          <i class="bi bi-droplet-half"></i>
+        </div>
+
+        <h4 class="title">METALWORKING FLUIDS</h4>
+
+        <p class="description">
+          Cleaners, Rust Preventive Oils, Forming Oils and
+          Semi-Synthetic Cutting Fluids.
         </p>
-      </header>
 
-      <div class="row">
+      </div>
 
-        <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="100">
-          <div class="icon"><i class="bi bi-diagram-3-fill"></i></div>
-          <h4 class="title"><a href="">Reel to Reel Plating </a></h4>
-          <p class="description">Reel plating is the surface coating of flat strips, stamped or preformed electrical contacts attached to a carrier strip in continuous lengths. </p>
+
+      <!-- Specialty Lubricants -->
+      <div class="col-lg-3 col-md-6 expertise-box"
+           data-aos="fade-up"
+           data-aos-delay="150">
+
+        <div class="icon">
+          <i class="bi bi-fire"></i>
         </div>
-        <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="200">
-          <div class="icon"><i class="bi bi-hdd-rack"></i></div>
-          <h4 class="title"><a href="">Rack Plating  </a></h4>
-          <p class="description">In Rack plating job parts are ‘hung’ on a metal rack (fixture) and get transported through the different stages of pre-treatment, electroplating and post-treatment. </p>
+
+        <h4 class="title">SPECIALTY LUBRICANTS</h4>
+
+        <p class="description">
+          High-Performance Greases, High-Temperature Lubricants,
+          Specialty Oils and Application-Specific Lubricants.
+        </p>
+
+      </div>
+
+
+      <!-- MRO & Industrial Lubricants -->
+      <div class="col-lg-3 col-md-6 expertise-box"
+           data-aos="fade-up"
+           data-aos-delay="200">
+
+        <div class="icon">
+          <i class="bi bi-gear-wide-connected"></i>
         </div>
-        <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="300">
-          <div class="icon"><i class="bi bi-card-checklist"></i></div>
-          <h4 class="title"><a href="">Selective Plating </a></h4>
-          <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+
+        <h4 class="title">MRO &amp; INDUSTRIAL LUBRICANTS</h4>
+
+        <p class="description">
+          Industrial Greases, Gear Oils, Hydraulic Oils,
+          Compressor Oils, Chain Oils and Maintenance Lubricants.
+        </p>
+
+      </div>
+
+
+      <!-- Customized Solutions -->
+      <div class="col-lg-3 col-md-6 expertise-box"
+           data-aos="fade-up"
+           data-aos-delay="250">
+
+        <div class="icon">
+          <i class="bi bi-sliders"></i>
         </div>
-        <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="200">
-          <div class="icon"><i class="bi bi-binoculars"></i></div>
-          <h4 class="title"><a href="">Barrel Plating </a></h4>
-          <p class="description">Barrel plating is a mass finishing operation whereby the job parts are placed in a slow rotating barrel immersed in an electroplating bath. </p>
-        </div>
-        <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="300">
-          <div class="icon"><i class="bi bi-brightness-high"></i></div>
-          <h4 class="title"><a href="">Reel to Reel Selective Plating </a></h4>
-          <p class="description">Reel-to-reel selective plating is a specific electroplating process where metal is selectively deposited onto specific areas of a continuous strip or reel of material. This process is commonly used in industries such as electronics, telecommunications, and automotive, where precision plating on specific areas is essential.</p>
-        </div>
-        
+
+        <h4 class="title">CUSTOMIZED SOLUTIONS</h4>
+
+        <p class="description">
+          Application-specific formulations and technical solutions.
+        </p>
 
       </div>
 
     </div>
-  </section><!-- End Services Section -->
+
+
+    <!-- Buttons -->
+    <div class="expertise-buttons">
+
+      <a href="#solutions" class="expertise-btn">
+        Explore Our Solutions <i class="bi bi-arrow-right"></i>
+      </a>
+
+      <a href="#contact" class="expertise-btn">
+        Talk to Our Technical Team <i class="bi bi-arrow-right"></i>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+<!-- End Our Expertise Section -->
+   <!-- ======= Services Section ======= -->
+   <!-- End Services Section -->
 
   
 
     
 
-  
 
-    <!-- ======= Our Clients Section ======= -->
-    <section id="clients">
-      <div class="container" data-aos="zoom-in">
-
-        <header class="section-header">
-          <h3>Our Clients</h3>
-        </header>
-
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/Picture1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Picture2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Picture3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Picture4.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Picture5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Picture6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Picture7.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Picture8.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Picture9.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Picture10.png" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Our Clients Section -->
 
 
 
@@ -261,104 +434,98 @@
     </section>
   </main><!-- End #main -->
 
-<!-- ======= Footer ======= -->
-<footer id="footer">
-  <div class="footer-top">
-    <div class="container">
-      <div class="row">
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <!-- <div class="footer-top">
+      <div class="container">
+        <div class="row">
 
-        <div class="col-lg-3 col-md-6 footer-info">
-          <h3><img
-            src="assets/img/logo.png"
-            class="img-fluid rounded-bottom"
-            alt="Logo"
-            height="100px"
-            width="100px" />
-         
-          </h3>
-          <h2 >History of Vikram Industries</h2>
-          
-            <blockquote>The company pride it self in its technical knowledge of Copper / Tin / Nickel /Sulfamate Nickel/ Silver/Rhodium/Palladium and Gold Plating.
-              <span style="color: aqua;">VR Industries</span> in the sister company of Vikram Industries ,
-              <span style="color: aqua;">VR Industries</span>  has established in 2020 at varale (Chakan -Pune)
-              <span style="color: aqua;">VR Industries</span> has Started strip Copper/Brass/SS/MS reel to reel selective plating & barrel plating.
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3><img
+              src="assets/img/logo.png"
+              class="img-fluid rounded-bottom"
+              alt="Logo"
+              height="100px"
+              width="100px" />
+           
+            </h3>
+      
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p> <strong>unit I</strong>
+              <i class="bi bi-geo-alt-fill"  >  1/Shalimar Industrial Estate, Opp. Jyoti Hotel ,Goddev Fatak Road ,Bhayander (E) Mumbai -401 105
+                Maharashtra-India</i>
               
-              </blockquote>
-        </div>
+                <br>
+              <strong>Phone:</strong> +91 9224431008<br>
+              <strong>Email:</strong> support@vrindustries.com<br>
+            </p>
 
+            <p> <strong>unit II</strong>
+              <i class="bi bi-geo-alt-fill"  >  Plot 9.Gat No.48/1a/48/3/48/448/5, Varale ,
+                Tal-Khed, Dist-Pune -410501 Maharashtra.
+               </i>
+              
+                <br>
+              <strong>Phone:</strong> +91 9224431008<br>
+              <strong>Email:</strong> support@vrindustries.com<br>
+            </p>
 
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="about.html">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="about.html">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
 
-        <div class="col-lg-3 col-md-6 footer-contact">
-          <h4>Contact Us</h4>
-          <p> <strong>unit I</strong>
-            <i class="bi bi-geo-alt-fill"  >  1/Shalimar Industrial Estate, Opp. Jyoti Hotel ,Goddev Fatak Road ,Bhayander (E) Mumbai -401 105
-              Maharashtra-India</i>
-            
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Our Units</h4>
+            <h2>Unit I</h2>
+            <p>Vikram Industries  established in the year of 1992
+              Area : 5000 Sq. ft. Plant premises. (Unit I) 
+              Vikram Industries is ISO 9001 :2015. 
+              </p>
               <br>
-            <strong>Phone:</strong> +91 9224431008<br>
-            <strong>Email:</strong> support@vrindustries.com<br>
-          </p>
-
-          <p> <strong>unit II</strong>
-            <i class="bi bi-geo-alt-fill"  >  Plot 9.Gat No.48/1a/48/3/48/448/5, Varale ,
-              Tal-Khed, Dist-Pune -410501 Maharashtra.
-             </i>
-            
-              <br>
-            <strong>Phone:</strong> +91 9224431008<br>
-            <strong>Email:</strong> support@vrindustries.com<br>
-          </p>
-
-          <div class="social-links">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <h2>Unit II</h2>
+              <p>VR Industries  established in the year of 2020
+                Area : 20000 Sq. ft. Plant premises. (Unit II) 
+                VR Industries is ISO 9001 :2015. 
+                
+                </p>
+              
           </div>
 
         </div>
+      </div>
+    </div> -->
 
-        <div class="col-lg-3 col-md-6 footer-newsletter">
-          <h4>Our Units</h4>
-          <h2>Unit I</h2>
-          <p>Vikram Industries  established in the year of 1992
-            Area : 5000 Sq. ft. Plant premises. (Unit I) 
-            Vikram Industries is ISO 9001 :2015. 
-            </p>
-            <br>
-            <h2>Unit II</h2>
-            <p>VR Industries  established in the year of 2020
-              Area : 20000 Sq. ft. Plant premises. (Unit II) 
-              VR Industries is ISO 9001 :2015. 
-              
-              </p>
-            
-        </div>
-
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Orovecta | Industrial Lubrication. Engineered for Performance.</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       
+        <!-- <div>Designed by <a href="http://rswebtechsoft.com/">rswebtechsoft</a>  </div> -->
       </div>
     </div>
-  </div>
+  </footer><!-- End Footer -->
 
-  <div class="container">
-    <div class="copyright">
-      &copy; Copyright <strong>VR INDUSTRIE'S</strong>. All Rights Reserved
-    </div>
-    <div class="credits">
-     
-      <div>  </div>
-    </div>
-  </div>
-</footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <!-- Uncomment below i you want to use a preloader -->
