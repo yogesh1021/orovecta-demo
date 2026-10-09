@@ -26,541 +26,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-<style>
-      /* ===== Orovecta Core Solution Product Blocks ===== */
-      #solutions.product-solutions {
-        padding: 80px 0;
-        background: #f8f8f8;
-      }
 
-      #solutions .product-solutions-row {
-        margin-top: 35px;
-      }
-
-      #solutions .product-block {
-        position: relative;
-        height: 100%;
-        min-height: 340px;
-        padding: 42px 34px 36px;
-        background: #ffffff;
-        border: 1px solid #e7e7e7;
-        border-top: 4px solid #00d9d9;
-        box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
-        transition: all 0.3s ease;
-        overflow: hidden;
-      }
-
-      #solutions .product-block::after {
-        content: "";
-        position: absolute;
-        right: -55px;
-        bottom: -65px;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background: rgba(0, 217, 217, 0.06);
-        transition: all 0.3s ease;
-      }
-
-      #solutions .product-block:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 16px 38px rgba(0, 0, 0, 0.11);
-        border-top-color: #00c7c7;
-      }
-
-      #solutions .product-block:hover::after {
-        transform: scale(1.25);
-      }
-
-      #solutions .product-icon {
-        width: 62px;
-        height: 62px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 22px;
-        border-radius: 50%;
-        background: #f1fafa;
-        color: #00bfc4;
-        font-size: 30px;
-      }
-
-      #solutions .product-number {
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        font-family: "Montserrat", sans-serif;
-        font-size: 14px;
-        font-weight: 700;
-        color: #b7b7b7;
-        letter-spacing: 1px;
-      }
-
-      #solutions .product-block h4 {
-        margin: 0 0 18px;
-        font-family: "Montserrat", sans-serif;
-        font-size: 25px;
-        font-weight: 500;
-        color: #30485a;
-      }
-
-      #solutions .product-block p {
-        margin: 0 0 28px;
-        min-height: 88px;
-        font-size: 15px;
-        line-height: 1.75;
-        color: #667887;
-      }
-
-      #solutions .product-block a {
-        position: relative;
-        z-index: 2;
-        color: #00aeb4;
-        font-size: 15px;
-        font-weight: 600;
-        text-decoration: none;
-        transition: all 0.3s ease;
-      }
-
-      #solutions .product-block a i {
-        margin-left: 7px;
-        transition: margin-left 0.3s ease;
-      }
-
-      #solutions .product-block a:hover {
-        color: #008d92;
-      }
-
-      #solutions .product-block a:hover i {
-        margin-left: 12px;
-      }
-
-      @media (max-width: 991px) {
-        #solutions .product-block {
-          margin-bottom: 30px;
-          min-height: 320px;
-        }
-      }
-
-      @media (max-width: 575px) {
-        #solutions.product-solutions {
-          padding: 60px 0;
-        }
-
-        #solutions .product-block {
-          padding: 35px 28px 30px;
-          min-height: auto;
-        }
-      }
-
-      /* ===== Customized Solutions - Section Only ===== */
-#customized {
-  background: #fff !important;
-  padding: 80px 0;
-}
-
-#customized .section-header {
-  margin-bottom: 55px;
-}
-
-#customized .custom-intro h4 {
-  color: #1b1b1b;
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-#customized .custom-intro p {
-  color: #555;
-  font-size: 15px;
-  line-height: 1.85;
-  margin-bottom: 18px;
-}
-
-#customized .custom-intro .custom-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 12px;
-  padding: 11px 22px;
-  border: 1px solid #00d9d9;
-  color: #111;
-  text-decoration: none;
-  transition: all .3s ease;
-}
-
-#customized .custom-intro .custom-btn:hover {
-  background: #00d9d9;
-  color: #fff;
-}
-
-#customized .custom-approach {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0;
-}
-
-#customized .custom-step {
-  position: relative;
-  display: flex;
-  gap: 18px;
-  min-height: 125px;
-  padding: 0 25px 28px 0;
-}
-
-#customized .custom-step:nth-child(even) {
-  padding-left: 25px;
-  padding-right: 0;
-}
-
-#customized .custom-step .step-no {
-  flex: 0 0 48px;
-  width: 48px;
-  height: 48px;
-  border: 1px solid #00d9d9;
-  color: #111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-#customized .custom-step h4 {
-  margin: 0 0 8px;
-  color: #222;
-  font-size: 17px;
-  font-weight: 600;
-}
-
-#customized .custom-step p {
-  margin: 0;
-  color: #666;
-  font-size: 14px;
-  line-height: 1.65;
-}
-
-#customized .customization-title {
-  margin: 35px 0 25px;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: .5px;
-  color: #222;
-}
-
-#customized .customization-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  border-top: 1px solid #e8e8e8;
-}
-
-#customized .customization-item {
-  padding: 28px 20px 10px;
-  text-align: center;
-  border-right: 1px solid #e8e8e8;
-}
-
-#customized .customization-item:last-child {
-  border-right: 0;
-}
-
-#customized .customization-item i {
-  display: block;
-  color: #00cfd2;
-  font-size: 25px;
-  margin-bottom: 14px;
-}
-
-#customized .customization-item h5 {
-  margin: 0;
-  color: #555;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 500;
-}
-
-@media (max-width: 991px) {
-  #customized {
-    padding: 65px 0;
-  }
-
-  #customized .custom-approach {
-    margin-top: 35px;
-  }
-
-  #customized .customization-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  #customized .customization-item:nth-child(3) {
-    border-right: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  #customized .section-header {
-    margin-bottom: 35px;
-  }
-
-  #customized .custom-approach {
-    grid-template-columns: 1fr;
-    margin-top: 35px;
-  }
-
-  #customized .custom-step,
-  #customized .custom-step:nth-child(even) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  #customized .customization-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  #customized .customization-item {
-    border-bottom: 1px solid #e8e8e8;
-  }
-
-  #customized .customization-item:nth-child(3) {
-    border-right: 1px solid #e8e8e8;
-  }
-
-  #customized .customization-item:nth-child(even) {
-    border-right: 0;
-  }
-}
-
-/* ===== Industries Section - Orovecta ===== */
-#industries {
-  background: #fff !important;
-  padding: 80px 0;
-}
-#industries .section-header { margin-bottom: 50px; }
-#industries .section-header p:first-of-type {
-  font-size: 18px;
-  font-weight: 600;
-  color: #222;
-  margin-bottom: 8px;
-}
-#industries .industry-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid #e6e6e6;
-  border-left: 1px solid #e6e6e6;
-}
-#industries .industry-item {
-  min-height: 235px;
-  padding: 32px 30px;
-  border-right: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-  background: #fff;
-  transition: all .3s ease;
-}
-#industries .industry-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0,0,0,.06);
-}
-#industries .industry-number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  margin-bottom: 22px;
-  border: 1px solid #00d9d9;
-  color: #222;
-  font-size: 12px;
-  font-weight: 600;
-}
-#industries .industry-item h4 {
-  margin: 0 0 13px;
-  color: #222;
-  font-size: 19px;
-  font-weight: 600;
-}
-#industries .industry-item p {
-  margin: 0;
-  color: #666;
-  font-size: 14px;
-  line-height: 1.75;
-}
-@media (max-width: 991px) {
-  #industries { padding: 65px 0; }
-  #industries .industry-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 575px) {
-  #industries .industry-grid { grid-template-columns: 1fr; }
-  #industries .industry-item { min-height: auto; }
-}
-/* =========================================================
-   WHY OROVECTA - CLEAN & PREMIUM
-   ========================================================= */
-
-#why-orovecta {
-  background: #ffffff !important;
-  padding: 85px 0;
-}
-
-/* Section Heading */
-#why-orovecta .section-header {
-  margin-bottom: 55px;
-}
-
-#why-orovecta .section-header h3 {
-  margin-bottom: 15px;
-}
-
-#why-orovecta .section-header p {
-  color: #666;
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-/* Main Grid */
-#why-orovecta .why-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 18px;
-}
-
-/* Individual Card */
-#why-orovecta .why-item {
-  position: relative;
-  min-height: 245px;
-  padding: 32px 28px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  border-radius: 2px;
-  overflow: hidden;
-
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
-}
-
-/* Small aqua line at top */
-#why-orovecta .why-item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 45px;
-  height: 3px;
-  background: #00d9d9;
-}
-
-/* Hover */
-#why-orovecta .why-item:hover {
-  transform: translateY(-6px);
-  border-color: #e2e2e2;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-}
-
-/* Number */
-#why-orovecta .why-number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 42px;
-  height: 42px;
-
-  margin-bottom: 28px;
-
-  background: #f8ffff;
-  border: 1px solid #00d9d9;
-
-  color: #222;
-  font-size: 12px;
-  font-weight: 600;
-
-  transition: all 0.3s ease;
-}
-
-#why-orovecta .why-item:hover .why-number {
-  background: #00d9d9;
-  color: #ffffff;
-}
-
-/* Title */
-#why-orovecta .why-item h4 {
-  margin: 0 0 15px;
-
-  color: #151515;
-  font-size: 17px;
-  font-weight: 600;
-  line-height: 1.4;
-  letter-spacing: 0.2px;
-}
-
-/* Description */
-#why-orovecta .why-item p {
-  margin: 0;
-
-  color: #707070;
-  font-size: 14px;
-  line-height: 1.75;
-}
-
-/* =========================================================
-   TABLET
-   ========================================================= */
-
-@media (max-width: 1199px) {
-
-  #why-orovecta .why-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 767px) {
-
-  #why-orovecta {
-    padding: 65px 0;
-  }
-
-  #why-orovecta .section-header {
-    margin-bottom: 40px;
-  }
-
-  #why-orovecta .why-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-
-  #why-orovecta .why-item {
-    min-height: 220px;
-    padding: 25px 22px;
-  }
-
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-   ========================================================= */
-
-@media (max-width: 575px) {
-
-  #why-orovecta .why-grid {
-    grid-template-columns: 1fr;
-  }
-
-  #why-orovecta .why-item {
-    min-height: auto;
-    padding: 28px 24px;
-  }
-
-}
-    </style>
 
 </head>
 
@@ -612,19 +78,19 @@
           <!-- .navbar  -->
              <nav id="navbar" class="navbar">
             <ul>
-              <li><a class="nav-link scrollto active" href="#hero">HOME</a></li>
+              <li><a class="nav-link scrollto active" href="index.html">HOME</a></li>
               <li><a class="nav-link scrollto" href="about.html">ABOUT</a></li>
               <li class="dropdown"><a href="#solutions"><span>SOLUTIONS</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
-                  <li><a href="#metalworking">Metalworking Fluids</a></li>
-                  <li><a href="#specialty">Specialty Lubricants</a></li>
-                  <li><a href="#mro">MRO Lubricants</a></li>
-                  <li><a href="#customized">Customized Solutions</a></li>
+                  <li><a href="metalworking_Fluids.html">Metalworking Fluids</a></li>
+                  <li><a href="specialty_lubricants.html">Specialty Lubricants</a></li>
+                  <li><a href="mro_lubricants.html">MRO Lubricants</a></li>
+                  <li><a href="customized_solution.html">Customized Solutions</a></li>
                 </ul>
               </li>
-              <li><a class="nav-link scrollto" href="#industries">INDUSTRIES</a></li>
-              <li><a class="nav-link scrollto" href="#why-orovecta">WHY OROVECTA?</a></li>
-              <li><a class="nav-link scrollto" href="#">CONTACT</a></li>
+              <li><a class="nav-link scrollto" href="industries.html">INDUSTRIES</a></li>
+              <li><a class="nav-link scrollto" href="why_orovecta.html">WHY OROVECTA?</a></li>
+              <li><a class="nav-link scrollto" href="Contact.html">CONTACT</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav>
@@ -697,7 +163,7 @@
           <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/3.webp)">
             <div class="carousel-container">
               <div class="container">
-                <h2 class="animate__animated animate__fadeInDown">ENGINEERED LUBRICATION SOLUTIONS <span style="color:aqua;">FOR INDUSTRY</span></h2>
+                <h2 class="animate__animated animate__fadeInDown">ENGINEERED LUBRICATION SOLUTIONS <span style="color:#FEC513;">FOR INDUSTRY</span></h2>
                 <p class="animate__animated animate__fadeInUp">German Technology • Metalworking • Specialty Lubrication • MRO</p>
                 <a href="#solutions" class="btn-get-started scrollto animate__animated animate__fadeInUp">Explore Solutions</a>
               </div>
@@ -707,7 +173,7 @@
           <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/2.webp)">
             <div class="carousel-container">
               <div class="container">
-                <h2 class="animate__animated animate__fadeInDown"><span style="color:aqua;">METALWORKING</span> SOLUTIONS</h2>
+                <h2 class="animate__animated animate__fadeInDown"><span style="color:#FEC513;">METALWORKING</span> SOLUTIONS</h2>
                 <p class="animate__animated animate__fadeInUp">Cleaners, rust preventive oils, forming oils and semi-synthetic cutting fluids designed around your manufacturing process.</p>
                 <a href="#metalworking" class="btn-get-started scrollto animate__animated animate__fadeInUp">View Metalworking</a>
               </div>
@@ -717,7 +183,7 @@
           <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/1.webp)">
             <div class="carousel-container">
               <div class="container">
-                <h2 class="animate__animated animate__fadeInDown">SPECIALTY <span style="color:aqua;">LUBRICANTS</span></h2>
+                <h2 class="animate__animated animate__fadeInDown">SPECIALTY <span style="color:#FEC513;">LUBRICANTS</span></h2>
                 <p class="animate__animated animate__fadeInUp">Performance for demanding applications involving extreme temperature, heavy loads, high speeds and challenging environments.</p>
                 <a href="#specialty" class="btn-get-started scrollto animate__animated animate__fadeInUp">Explore Specialty Lubricants</a>
               </div>
@@ -1079,7 +545,7 @@
 
  
     <!-- ======= Our Clients Section ======= -->
-    <section id="clients">
+    <!-- <section id="clients">
       <div class="container" data-aos="zoom-in">
 
         <header class="section-header">
@@ -1103,7 +569,8 @@
         </div>
 
       </div>
-    </section><!-- End Our Clients Section -->
+    </section> -->
+    <!-- End Our Clients Section -->
 
    
 
