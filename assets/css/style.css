@@ -332,7 +332,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #18d26e;
+  color: #FEC513;
 }
 
 .navbar-mobile .getstarted,
@@ -523,7 +523,7 @@ h6 {
 
 #hero .btn-get-started:hover {
   background: #fff;
-  color: #18d26e;
+  color: #FEC513;
 }
 
 /*--------------------------------------------------------------
@@ -649,7 +649,7 @@ section {
 }
 
 #featured-services i {
-  color: #18d26e;
+  color: #FEC513;
   font-size: 48px;
   display: inline-block;
   line-height: 1;
@@ -666,7 +666,7 @@ section {
 }
 
 #featured-services h4 a:hover {
-  color: #18d26e;
+  color: #FEC513;
 }
 
 #featured-services p {
@@ -764,7 +764,7 @@ section {
 }
 
 #about .about-col h2 a:hover {
-  color: #18d26e;
+  color: #FEC513;
 }
 
 #about .about-col p {
@@ -854,8 +854,8 @@ section {
 }
 
 #call-to-action .cta-btn:hover {
-  background: #18d26e;
-  border: 2px solid #18d26e;
+  background: #FEC513;
+  border: 2px solid #FEC513;
 }
 
 /* Call To Action Section
@@ -920,7 +920,7 @@ section {
   font-weight: bold;
   font-size: 48px;
   display: block;
-  color: #18d26e;
+  color: #FEC513;
 }
 
 #facts .counters p {
@@ -966,7 +966,7 @@ section {
 
 #portfolio #portfolio-flters li:hover,
 #portfolio #portfolio-flters li.filter-active {
-  background: #18d26e;
+  background: #FEC513;
   color: #fff;
 }
 
@@ -1028,7 +1028,7 @@ section {
 
 #portfolio .portfolio-item figure .link-preview:hover,
 #portfolio .portfolio-item figure .link-details:hover {
-  background: #18d26e;
+  background: #FEC513;
 }
 
 #portfolio .portfolio-item figure .link-preview:hover i,
@@ -1077,7 +1077,7 @@ section {
 }
 
 #portfolio .portfolio-item .portfolio-info h4 a:hover {
-  color: #18d26e;
+  color: #FEC513;
 }
 
 #portfolio .portfolio-item .portfolio-info p {
@@ -1110,11 +1110,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #18d26e;
+  border: 1px solid #FEC513;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: #FEC513;
 }
 
 .portfolio-details .portfolio-info {
@@ -1446,12 +1446,12 @@ section {
 }
 
 .blog .entry .entry-title a:hover {
-  color: #18d26e;
+  color: #FEC513;
 }
 
 .blog .entry .entry-meta {
   margin-bottom: 15px;
-  color: #18d26e;
+  color: #FEC513;
 }
 
 .blog .entry .entry-meta ul {
@@ -1497,11 +1497,11 @@ section {
   transition: 0.3s;
   font-size: 14px;
   border-radius: 50px;
-  border: 2px solid #18d26e;
+  border: 2px solid #FEC513;
 }
 
 .blog .entry .entry-content .read-more a:hover {
-  background: #18d26e;
+  background: #FEC513;
   color: #fff;
 }
 
@@ -1536,7 +1536,7 @@ section {
   top: 0;
   bottom: 0;
   width: 3px;
-  background-color: #18d26e;
+  background-color: #FEC513;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -1547,7 +1547,7 @@ section {
 }
 
 .blog .entry .entry-footer i {
-  color: #18d26e;
+  color: #FEC513;
   display: inline;
 }
 
@@ -1557,7 +1557,7 @@ section {
 }
 
 .blog .entry .entry-footer a:hover {
-  color: #18d26e;
+  color: #FEC513;
 }
 
 .blog .entry .entry-footer .cats {
@@ -1630,7 +1630,7 @@ section {
 }
 
 .blog .blog-author .social-links a:hover {
-  color: #18d26e;
+  color: #FEC513;
 }
 
 .blog .blog-author p {
@@ -1676,7 +1676,7 @@ section {
 
 .blog .blog-comments .comment h5 .reply {
   padding-left: 10px;
-  color: #18d26e;
+  color: #FEC513;
 }
 
 .blog .blog-comments .comment h5 .reply i {
@@ -1739,7 +1739,7 @@ section {
   border-radius: 50px;
   padding: 10px 30px;
   border: 0;
-  background-color: #18d26e;
+  background-color: #FEC513;
 }
 
 .blog .blog-comments .reply-form .btn-primary:hover {
@@ -1747,7 +1747,7 @@ section {
 }
 
 .blog .blog-pagination {
-  color: #18d26e;
+  color: #FEC513;
 }
 
 .blog .blog-pagination ul {
@@ -1763,7 +1763,7 @@ section {
 }
 
 .blog .blog-pagination li a {
-  color: #18d26e;
+  color: #FEC513;
   padding: 6px 20px;
   display: flex;
   align-items: center;
@@ -1774,7 +1774,7 @@ section {
 
 .blog .blog-pagination li.active,
 .blog .blog-pagination li:hover {
-  background: #18d26e;
+  background: #FEC513;
   border-radius: 50px;
 }
 
@@ -1832,7 +1832,7 @@ section {
   font-size: 16px;
   padding: 0 30px;
   margin: -1px;
-  background: #18d26e;
+  background: #FEC513;
   color: #fff;
   transition: 0.3s;
   line-height: 0;
@@ -1862,7 +1862,7 @@ section {
 }
 
 .blog .sidebar .categories ul a:hover {
-  color: #18d26e;
+  color: #FEC513;
 }
 
 .blog .sidebar .categories ul a span {
@@ -1892,7 +1892,7 @@ section {
 }
 
 .blog .sidebar .recent-posts h4 a:hover {
-  color: #18d26e;
+  color: #FEC513;
 }
 
 .blog .sidebar .recent-posts time {
@@ -1921,7 +1921,7 @@ section {
   font-size: 14px;
   padding: 6px 20px;
   margin: 0 6px 8px 0;
-  border: 1px solid #18d26e;
+  border: 1px solid #FEC513;
   display: inline-block;
   border-radius: 50px;
   transition: 0.3s;
@@ -1929,7 +1929,7 @@ section {
 
 .blog .sidebar .tags ul a:hover {
   color: #fff;
-  background: #18d26e;
+  background: #FEC513;
 }
 
 .blog .sidebar .tags ul a span {
@@ -2058,7 +2058,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #18d26e;
+  color: #FEC513;
 }
 
 #footer .footer-top .footer-contact {
@@ -2080,7 +2080,7 @@ section {
 }
 
 #footer .footer-top .footer-newsletter input[type=submit] {
-  background: #18d26e;
+  background: #FEC513;
   border: 0;
   width: 35%;
   padding: 6px 0;
