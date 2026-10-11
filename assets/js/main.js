@@ -319,3 +319,103 @@
   new PureCounter();
 
 })()
+
+// 11/10/2026
+
+
+document.querySelectorAll('.product-range').forEach((section) => {
+  const track = section.querySelector('.range-track');
+  const viewport = section.querySelector('.range-viewport');
+  const cards = [...section.querySelectorAll('.range-card')];
+  const prev = section.querySelector('.range-arrow.prev');
+  const next = section.querySelector('.range-arrow.next');
+  const fill = section.querySelector('.range-progress-fill');
+  const count = section.querySelector('.range-count');
+
+  let index = 0;
+
+  function visibleCards() {
+    if (window.innerWidth <= 575) return 1;
+    if (window.innerWidth <= 991) return 2;
+    return 3;
+  }
+
+  function updateSlider() {
+    const visible = visibleCards();
+    const maxIndex = Math.max(0, cards.length - visibleCards());
+    index = Math.min(index, maxIndex);
+
+    const cardWidth = cards[0].getBoundingClientRect().width;
+    const gap = parseFloat(getComputedStyle(track).gap) || 0;
+
+    track.style.transform =
+      `translateX(-${index * (cardWidth + gap)}px)`;
+
+    prev.disabled = index === 0;
+    next.disabled = index >= maxIndex;
+
+    const current = index + 1;
+    const progress = maxIndex === 0
+  ? 100
+  : (index / maxIndex) * 100;
+
+fill.style.width = `${progress}%`;
+
+count.textContent =
+  `${String(index + visibleCards()).padStart(2, '0')} / ${String(cards.length).padStart(2, '0')}`;
+  }
+
+  prev.addEventListener('click', () => {
+    index = Math.max(0, index - 1);
+    updateSlider();
+  });
+
+  next.addEventListener('click', () => {
+    index = Math.min(
+      cards.length - visibleCards(),
+      index + 1
+    );
+    updateSlider();
+  });
+
+  window.addEventListener('resize', updateSlider);
+  updateSlider();
+  
+  // Auto-scrolling
+  let autoScroll;
+
+  function startAutoScroll() {
+    clearInterval(autoScroll);
+
+    autoScroll = setInterval(() => {
+      const maxIndex = Math.max(0, cards.length - visibleCards());
+
+      index = index >= maxIndex ? 0 : index + 1;
+
+      updateSlider();
+    }, 3000);
+  }
+
+  function stopAutoScroll() {
+    clearInterval(autoScroll);
+  }
+
+  viewport.addEventListener('mouseenter', stopAutoScroll);
+  viewport.addEventListener('mouseleave', startAutoScroll);
+
+  viewport.addEventListener('touchstart', stopAutoScroll, {
+    passive: true
+  });
+
+  viewport.addEventListener('touchend', startAutoScroll, {
+    passive: true
+  });
+
+  prev.addEventListener('click', startAutoScroll);
+  next.addEventListener('click', startAutoScroll);
+
+  startAutoScroll();
+
+});
+
+
