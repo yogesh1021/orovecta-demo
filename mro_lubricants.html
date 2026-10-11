@@ -110,122 +110,504 @@
     
 
  
-        <section id="blog" class="blog">
-            <div class="container" data-aos="fade-up">
-      
-              <div class="row">
-      
-                <div class="col-lg-8 entries">
-      
-                  <article class="entry entry-single">
-      
-                    <div class="entry-img" style="color: black;">
-                      <h2>REEL TO REEL PLATING</h2>
-                    </div>
-      
-                    <h2 class="entry-title">
-                      <p style="color: black;">VR Industries has developed several cost-effective electroplating processes to ensure that every customer receives the quality finish they expect from an industry leader.</p>
-                    </a>
-                    </h2>
-      
-                    
-      
-                    <div class="entry-content">
-                      <p style="font-size: medium; color: rgb(27, 26, 26);">
-                       <strong >Reel to Reel Plating :</strong > Reel plating is the surface coating of flat strips, stamped or preformed electrical contacts attached to a carrier strip in continuous lengths. High speed electrochemical and electroplating processes are used together with high speed chemical engineering such as plating technology. The entire surface, otherwise small discrete selective areas, on the strip or contacts maybe plated. Solid strips, connectors, 
-                        semi-conductors and superconductors are some examples of component parts that can be plated in reel form.
-                      </p>
-      
-                    
-      
-                      
-                    </div>
-      
-                    <div class="entry-footer">
-                      
-                      </ul>
-      
-                     
-                      <ul class="tags">
-                        
-                      </ul>
-                    </div>
-      
-                <img
-                    src="assets/img/product/reel1.jpg"
-                    class="img-fluid "
-                    alt=""
-                    style="height: 400px; width: 700px;"
-                />
-                <br>
-                <br><br>
-                <img
-                    src="assets/img/product/reel2.jpg"
-                    class="img-fluid "
-                    alt=""
-                    style="height: 400px; width: 700px;"
-                    
-                />
-                
-      
-                 
-                  </div><!-- End blog author bio -->
-      
-               
-      
-                </div><!-- End blog entries list -->
-      
-      
-                
-      
-                
-      
-              </div>
-      
-            </div>
-          </section>
- 
+<!-- ======= MRO & Industrial Lubricants ======= -->
+<style>
+  #mro-section {
+    --mro-yellow: #FEC513;
+    --mro-dark: #2F424E;
+    --mro-muted: #687782;
+    color: var(--mro-dark);
+    background: #f7f8f9;
+  }
 
+  #mro-section .mro-kicker {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #927000;
+  }
 
+  #mro-section .mro-main-title {
+    font-size: clamp(30px, 4vw, 46px);
+    line-height: 1.15;
+    font-weight: 800;
+    letter-spacing: -1px;
+  }
 
+  #mro-section .mro-lead {
+    font-size: 15px;
+    line-height: 1.9;
+    color: var(--mro-muted);
+  }
 
- 
+  #mro-section .mro-hero {
+    background: #fff;
+    border: 1px solid #e7ebee;
+    overflow: hidden;
+  }
 
-  
-    <section id="contact" class="section-bg">
-      <div class="container" data-aos="fade-up">
+  #mro-section .mro-hero-copy {
+    padding: 40px;
+  }
 
-        <div class="section-header">
-        
+  #mro-section .mro-hero-visual {
+    min-height: 340px;
+    height: 100%;
+    padding: 35px;
+    background: var(--mro-dark);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #mro-section .mro-hero-visual::before,
+  #mro-section .mro-hero-visual::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(254,197,19,.35);
+    border-radius: 50%;
+  }
+
+  #mro-section .mro-hero-visual::before {
+    width: 290px;
+    height: 290px;
+    top: -90px;
+    right: -55px;
+  }
+
+  #mro-section .mro-hero-visual::after {
+    width: 215px;
+    height: 215px;
+    top: -52px;
+    right: -17px;
+  }
+
+  #mro-section .mro-hero-visual i {
+    font-size: 64px;
+    color: var(--mro-yellow);
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+  }
+
+  #mro-section .mro-hero-visual h3 {
+    font-size: 26px;
+    line-height: 1.4;
+    font-weight: 800;
+    position: relative;
+    z-index: 1;
+  }
+
+  #mro-section .mro-hero-visual p {
+    color: #d5dde2;
+    font-size: 13px;
+    line-height: 1.8;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+  }
+
+  #mro-section .mro-range-title {
+    font-size: 27px;
+    font-weight: 800;
+  }
+
+  #mro-section .mro-product-row {
+    background: #fff;
+    border-bottom: 1px solid #e6eaed;
+    padding: 19px 22px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    transition: background .2s ease, border-color .2s ease;
+    height: 100%;
+  }
+
+  #mro-section .mro-product-row:hover {
+    background: #fffdf4;
+    border-bottom-color: var(--mro-yellow);
+  }
+
+  #mro-section .mro-product-icon {
+    flex: 0 0 49px;
+    width: 49px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff5cc;
+    color: var(--mro-dark);
+    font-size: 23px;
+  }
+
+  #mro-section .mro-product-info {
+    flex: 1;
+  }
+
+  #mro-section .mro-product-info h4 {
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 800;
+    margin: 0 0 5px;
+  }
+
+  #mro-section .mro-product-info p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--mro-muted);
+    margin: 0;
+  }
+
+  #mro-section .mro-product-index {
+    align-self: flex-start;
+    font-size: 11px;
+    font-weight: 800;
+    color: #8a959c;
+  }
+
+  #mro-section .mro-app-panel {
+    height: 100%;
+    padding: 35px;
+    background: var(--mro-dark);
+    color: #fff;
+  }
+
+  #mro-section .mro-app-panel h3 {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1.4;
+  }
+
+  #mro-section .mro-app-panel p {
+    color: #d3dce1;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  #mro-section .mro-app-list {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 0;
+  }
+
+  #mro-section .mro-app-list li {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,.14);
+    font-size: 14px;
+  }
+
+  #mro-section .mro-app-list i {
+    color: var(--mro-yellow);
+  }
+
+  #mro-section .mro-cta {
+    padding: 30px 35px;
+    background: var(--mro-yellow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+  }
+
+  #mro-section .mro-cta h3 {
+    font-size: 23px;
+    font-weight: 800;
+    line-height: 1.4;
+    margin-bottom: 7px;
+  }
+
+  #mro-section .mro-cta p {
+    font-size: 14px;
+    color: #384650;
+    line-height: 1.7;
+    margin-bottom: 0;
+  }
+
+  #mro-section .mro-cta-btn {
+    display: inline-block;
+    background: var(--mro-dark);
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid var(--mro-dark);
+    padding: 14px 21px;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: .2s ease;
+  }
+
+  #mro-section .mro-cta-btn:hover {
+    background: #fff;
+    color: var(--mro-dark);
+    border-color: #fff;
+  }
+
+  @media (max-width: 767px) {
+    #mro-section .mro-hero-copy {
+      padding: 27px;
+    }
+
+    #mro-section .mro-hero-visual {
+      min-height: 280px;
+      padding: 27px;
+    }
+
+    #mro-section .mro-app-panel {
+      padding: 27px;
+    }
+
+    #mro-section .mro-cta {
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 27px;
+    }
+
+    #mro-section .mro-product-row {
+      padding: 17px;
+    }
+  }
+</style>
+
+<section id="mro-section" class="py-5">
+  <div class="container">
+
+    <!-- Split Hero -->
+    <div class="mro-hero mb-5">
+      <div class="row g-0">
+
+        <div class="col-lg-7">
+          <div class="mro-hero-copy">
+            <span class="mro-kicker">Orovecta / Industrial Solutions</span>
+
+            <h2 class="mro-main-title mt-3 mb-4">
+              MRO &amp; INDUSTRIAL
+              <span style="color:#9b7800;">LUBRICATION</span>
+            </h2>
+
+            <h5 class="fw-bold mb-3">
+              Reliable Lubrication for Everyday Industrial Requirements
+            </h5>
+
+            <p class="mro-lead mb-0">
+              From routine plant maintenance to demanding equipment
+              requirements, Orovecta provides industrial lubrication
+              solutions for machinery, transmission systems and
+              essential plant operations.
+            </p>
+          </div>
         </div>
 
+        <div class="col-lg-5">
+          <div class="mro-hero-visual">
+            <i class="bi bi-gear-wide-connected"></i>
+            <h3>Keep Your Industrial Operations Moving</h3>
+            <p>
+              Practical lubrication solutions for maintenance,
+              equipment protection and everyday plant performance.
+            </p>
+          </div>
+        </div>
 
       </div>
-    </section>
+    </div>
+
+    <!-- Product Range -->
+    <div class="mb-4">
+      <span class="mro-kicker">Lubrication Essentials</span>
+      <h3 class="mro-range-title mt-2 mb-2">OUR PRODUCT RANGE</h3>
+      <p class="mro-lead mb-0">
+        Industrial lubricants for a wide range of machinery and equipment.
+      </p>
+    </div>
+
+    <div class="row g-0 mb-5">
+
+      <div class="col-lg-6">
+        <div class="mro-product-row">
+          <div class="mro-product-icon">
+            <i class="bi bi-shield-check"></i>
+          </div>
+          <div class="mro-product-info">
+            <h4>INDUSTRIAL GREASES</h4>
+            <p>For bearings, machinery and general industrial applications.</p>
+          </div>
+          <span class="mro-product-index">01</span>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="mro-product-row">
+          <div class="mro-product-icon">
+            <i class="bi bi-gear-wide-connected"></i>
+          </div>
+          <div class="mro-product-info">
+            <h4>GEAR OILS</h4>
+            <p>For industrial gearboxes and transmission systems.</p>
+          </div>
+          <span class="mro-product-index">02</span>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="mro-product-row">
+          <div class="mro-product-icon">
+            <i class="bi bi-sliders"></i>
+          </div>
+          <div class="mro-product-info">
+            <h4>HYDRAULIC OILS</h4>
+            <p>For hydraulic equipment and fluid power systems.</p>
+          </div>
+          <span class="mro-product-index">03</span>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="mro-product-row">
+          <div class="mro-product-icon">
+            <i class="bi bi-wind"></i>
+          </div>
+          <div class="mro-product-info">
+            <h4>COMPRESSOR OILS</h4>
+            <p>For industrial compressor applications.</p>
+          </div>
+          <span class="mro-product-index">04</span>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="mro-product-row">
+          <div class="mro-product-icon">
+            <i class="bi bi-arrow-repeat"></i>
+          </div>
+          <div class="mro-product-info">
+            <h4>CHAIN OILS</h4>
+            <p>For industrial chains and material handling systems.</p>
+          </div>
+          <span class="mro-product-index">05</span>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="mro-product-row">
+          <div class="mro-product-icon">
+            <i class="bi bi-droplet-half"></i>
+          </div>
+          <div class="mro-product-info">
+            <h4>CIRCULATING &amp; MACHINE OILS</h4>
+            <p>For general industrial lubrication requirements.</p>
+          </div>
+          <span class="mro-product-index">06</span>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="mro-product-row">
+          <div class="mro-product-icon">
+            <i class="bi bi-tools"></i>
+          </div>
+          <div class="mro-product-info">
+            <h4>MAINTENANCE LUBRICANTS</h4>
+            <p>For assembly, protection and routine plant maintenance.</p>
+          </div>
+          <span class="mro-product-index">07</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Applications -->
+    <div class="row g-0 mb-5">
+
+      <div class="col-lg-4">
+        <div class="mro-app-panel">
+          <span class="mro-kicker" style="color:#FEC513;">
+            Across Your Facility
+          </span>
+          <h3 class="mt-3 mb-3">APPLICATIONS &amp; EQUIPMENT</h3>
+          <p class="mb-0">
+            Lubrication support for essential industrial machinery,
+            rotating equipment and material handling systems.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-8">
+        <div class="bg-white border h-100 p-4 p-lg-5">
+          <ul class="mro-app-list mt-0" style="color:#2F424E;">
+            <li style="border-color:#e5e9ec;">
+              <i class="bi bi-check-circle"></i> Bearings
+            </li>
+            <li style="border-color:#e5e9ec;">
+              <i class="bi bi-check-circle"></i> Gearboxes
+            </li>
+            <li style="border-color:#e5e9ec;">
+              <i class="bi bi-check-circle"></i> Chains
+            </li>
+            <li style="border-color:#e5e9ec;">
+              <i class="bi bi-check-circle"></i> Conveyors
+            </li>
+            <li style="border-color:#e5e9ec;">
+              <i class="bi bi-check-circle"></i> Pumps
+            </li>
+            <li style="border-color:#e5e9ec;">
+              <i class="bi bi-check-circle"></i> Motors
+            </li>
+            <li style="border-color:#e5e9ec;">
+              <i class="bi bi-check-circle"></i> Machine Tools
+            </li>
+            <li style="border-color:#e5e9ec; border-bottom:0;">
+              <i class="bi bi-check-circle"></i> Industrial Equipment
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Inquiry CTA -->
+    <div class="mro-cta">
+      <div>
+        <h3>NEED THE RIGHT LUBRICATION SOLUTION?</h3>
+        <p>
+          Tell us about your equipment and lubrication requirements.
+          Our team is ready to discuss your industrial application.
+        </p>
+      </div>
+
+      <div>
+        <a href="inquiry.html" class="mro-cta-btn">
+          Discuss Your Requirements
+          <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ======= End MRO & Industrial Lubricants ======= -->
+
+ 
   </main><!-- End #main -->
-<!-- ======= Footer ======= -->
+ <!-- ======= Footer ======= -->
 <footer id="footer">
   <div class="footer-top">
     <div class="container">
       <div class="row">
 
         <div class="col-lg-3 col-md-6 footer-info">
-          <h3><img
-            src="assets/img/logo.png"
-            class="img-fluid rounded-bottom"
-            alt="Logo"
-            height="100px"
-            width="100px" />
-         
-          </h3>
-          <h2 >History of Vikram Industries</h2>
           
-            <blockquote>The company pride it self in its technical knowledge of Copper / Tin / Nickel /Sulfamate Nickel/ Silver/Rhodium/Palladium and Gold Plating.
-              <span style="color: aqua;">VR Industries</span> in the sister company of Vikram Industries ,
-              <span style="color: aqua;">VR Industries</span>  has established in 2020 at varale (Chakan -Pune)
-              <span style="color: aqua;">VR Industries</span> has Started strip Copper/Brass/SS/MS reel to reel selective plating & barrel plating.
-              
-              </blockquote>
+          <h2 ><span style="color: #FEC513;">About</span>  Orovecta</h2>
+          
+            <blockquote style="text-align: justify;">Orovecta is an industrial lubrication brand with over 9+ years of experience, delivering technology-driven solutions for modern manufacturing and industrial applications. 
+            Our portfolio includes Metalworking Fluids, Specialty Lubricants, and MRO Solutions, combining German technology with application expertise to enhance performance, equipment reliability, and operational efficiency. We also provide customized lubrication solutions tailored to specific industrial requirements.  
+            </blockquote>
         </div>
 
 
@@ -234,9 +616,9 @@
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="about.html">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="about.html">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Contact.html">Contact Us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="industries.html">Industries</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="inquiry.html">Inquiry</a></li>
           </ul>
         </div>
 
@@ -251,15 +633,7 @@
             <strong>Email:</strong> support@vrindustries.com<br>
           </p>
 
-          <p> <strong>unit II</strong>
-            <i class="bi bi-geo-alt-fill"  >  Plot 9.Gat No.48/1a/48/3/48/448/5, Varale ,
-              Tal-Khed, Dist-Pune -410501 Maharashtra.
-             </i>
-            
-              <br>
-            <strong>Phone:</strong> +91 9224431008<br>
-            <strong>Email:</strong> support@vrindustries.com<br>
-          </p>
+          
 
           <div class="social-links">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -270,22 +644,42 @@
 
         </div>
 
-        <div class="col-lg-3 col-md-6 footer-newsletter">
-          <h4>Our Units</h4>
-          <h2>Unit I</h2>
-          <p>Vikram Industries  established in the year of 1992
-            Area : 5000 Sq. ft. Plant premises. (Unit I) 
-            Vikram Industries is ISO 9001 :2015. 
-            </p>
-            <br>
-            <h2>Unit II</h2>
-            <p>VR Industries  established in the year of 2020
-              Area : 20000 Sq. ft. Plant premises. (Unit II) 
-              VR Industries is ISO 9001 :2015. 
-              
-              </p>
-            
-        </div>
+       
+<!-- Google Map Section -->
+
+<!-- Right Side: Small Google Map -->
+<div class="col-lg-3 col-md-6 footer-map">
+  <h4>Our Location</h4>
+
+  <div class="footer-map-container">
+    <!-- <iframe
+      src="https://www.google.com/maps?q=Bhayander+East,+Mumbai,+Maharashtra&output=embed"
+      width="100%"
+      height="200"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Orovecta Office Location">
+    </iframe> -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.02659618764!2d72.85371177459749!3d19.28120958196606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b100794d374d%3A0x74f7f89aee9197c7!2smira%20road%20station!5e0!3m2!1sen!2sin!4v1791716318223!5m2!1sen!2sin" 
+    width="600" 
+    height="0" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </div>
+  
+
+  <!-- <a
+    href="https://www.google.com/maps/search/?api=1&query=Bhayander+East+Mumbai+Maharashtra"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="footer-map-link">
+    <i class="bi bi-geo-alt-fill"></i> View on Google Maps
+  </a> -->
+</div>
 
       </div>
     </div>
